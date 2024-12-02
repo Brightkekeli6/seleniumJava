@@ -4,8 +4,6 @@ import org.testng.annotations.Test;
 
 import pages.BasicDataPage;
 
-
-
 public class BasicDataPageTests extends BaseTest {
 
     @Test
@@ -17,7 +15,7 @@ public class BasicDataPageTests extends BaseTest {
 
         System.out.println("Entering zip code...");
         basicDataPage.enterZipCode("97491");
-        
+
         System.out.println("Selecting street...");
         basicDataPage.selectStreet("Aidhäuser Str.");
 
@@ -39,7 +37,7 @@ public class BasicDataPageTests extends BaseTest {
         System.out.println("Answering gross negligence question...");
         basicDataPage.selectGrossNegligenceNo();
 
-        System.out.println("Calculating tariff...");
+        System.out.println("Calculating tariff....");
         basicDataPage.clickCalculateTariffNow();
     }
 }
